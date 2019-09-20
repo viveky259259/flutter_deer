@@ -1,13 +1,12 @@
-import 'package:date_utils/date_utils.dart';
+import 'package:flutter_deer/library/date_utils.dart';
 import "package:intl/intl.dart";
 
 /// @Author: aleksanderwozniak
 /// @GitHub: https://github.com/aleksanderwozniak/table_calendar
 /// @Description: Date Util.
 class DateUtils {
-  
   static final DateFormat _apiDayFormat = new DateFormat("yy.MM.dd");
-  
+
   static String apiDayFormat(DateTime d) => _apiDayFormat.format(d);
 
   static String previousWeek(DateTime w) {
